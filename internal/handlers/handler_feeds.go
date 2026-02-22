@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func HandlerGetFeeds(s *State, cmd Command) error {
+func HandlerFeeds(s *State, cmd Command) error {
 	feeds, err := s.DB.GetFeeds(context.Background())
 
 	if err != nil {

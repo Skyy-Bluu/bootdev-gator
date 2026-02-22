@@ -79,7 +79,7 @@ func main() {
 	commands.register("register", handlers.HandlerRegister)
 	commands.register("reset", handlers.HandlerReset)
 	commands.register("users", handlers.HandlerUsers)
-	commands.register("feeds", handlers.HandlerGetFeeds)
+	commands.register("feeds", handlers.HandlerFeeds)
 	commands.register("agg", handlers.HandlerAggregator)
 	commands.register("addfeed", middlewareLoggedIn(handlers.HandlerAddFeed))
 	commands.register("follow", middlewareLoggedIn(handlers.HandlerFollow))

@@ -13,11 +13,11 @@ func HandlerAggregator(s *State, cmd Command) error {
 		return err
 	}
 
-	time_between_reqs := cmd.Argurments[0]
+	timeBetweenReqs := cmd.Argurments[0]
 
-	fmt.Printf("Collecting feeds every %s \n", time_between_reqs)
+	fmt.Printf("Collecting feeds every %s \n", timeBetweenReqs)
 
-	timeBetweenRequests, err := time.ParseDuration(time_between_reqs)
+	timeBetweenRequests, err := time.ParseDuration(timeBetweenReqs)
 
 	if err != nil {
 		return err
